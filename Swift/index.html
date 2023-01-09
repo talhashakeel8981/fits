@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+       
+        <nav class="navigation">
+            <label class="logo">SWIFT</label>
+            <label for="check"class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">OUR TEAM</a></li>
+            <li><a href="#">PRICE</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+            </ul>
+            
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images\slide1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images\slide2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images\slide3.jpg" alt=""></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+            disableOnInteraction:false,
+        },
+  
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+  
+});
+    </script>
+    <div class="Car">
+      <h2>Best Car Wash In The City</h2>
+      <p2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis
+lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p2>
+
+    </div>
+    <div class="middle_image">
+      <img src="images\slide3.jpg" alt="">
+    <div class="middle">
+      <h1>
+        About Our Company
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      
+        Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+      
+</div>
+    </div>
+    <div class="form">
+<h1>Contact Us</h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
+semper aliquam quis mattis quam.
+</p>
+<label>
+  <input type="text" placeholder="Your Name...">
+</label>
+<br/>
+<label>
+  <input type="email" placeholder="Email Address...">
+</label>
+<br/>
+<label>
+  <textarea name="textarea" id="1" cols="40" rows="15" placeholder="Message..."></textarea>
+</label>
+<br/>
+<label>
+  <button class="btn">
+    Send
+  </button>
+</label>
+    </div>
+</body>
+
+</html>
